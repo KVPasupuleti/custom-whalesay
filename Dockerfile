@@ -1,4 +1,4 @@
-FROM hello-world:linux
+FROM codercom/code-server
 RUN pip install --no-cache-dir notebook==5.3
 ARG NB_USER=ib_admin
 ARG NB_UID=1000

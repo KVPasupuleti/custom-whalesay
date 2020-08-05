@@ -1,4 +1,4 @@
-FROM docker/whalesay
+FROM jupyter/scipy-notebook:cf6258237ff9
 RUN pip install --no-cache-dir notebook==5.6.0
 ARG NB_USER=ib_admin
 ARG NB_UID=1000

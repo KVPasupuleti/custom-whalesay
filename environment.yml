@@ -1,4 +1,0 @@
-name: kaywee
-dependencies:
- - pip==19.*
-

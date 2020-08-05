@@ -6,10 +6,7 @@ ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
 RUN git clone https://github.com/Kaywee27/custom-whalesay.git
-RUN adduser --disabled-password \
-    --gecos "Default user" \
-    --uid ${NB_UID} \
-    ${NB_USER}
+
 COPY . ${HOME}
 USER root
 RUN chown -R ${NB_UID} ${HOME}

@@ -1,5 +1,5 @@
-FROM codercom/code-server
-RUN pip install --no-cache-dir notebook==5.3
+FROM codercom/code-server:3.4.1
+RUN pip install --no-cache-dir notebook==5.6.0
 ARG NB_USER=ib_admin
 ARG NB_UID=1000
 ENV USER ${NB_USER}

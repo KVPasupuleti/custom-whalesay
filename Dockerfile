@@ -1,5 +1,5 @@
 FROM hello-world:linux
-RUN pip install --no-cache-dir notebook==5.*
+RUN pip install --no-cache-dir notebook==5
 ARG NB_USER=jovyan
 ARG NB_UID=1000
 ENV USER ${NB_USER}

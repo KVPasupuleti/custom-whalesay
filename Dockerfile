@@ -1,4 +1,4 @@
-FROM codercom/code-server:3.4.1
+FROM docker/whalesay
 RUN pip install --no-cache-dir notebook==5.6.0
 ARG NB_USER=ib_admin
 ARG NB_UID=1000
